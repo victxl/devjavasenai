@@ -19,7 +19,7 @@ public class Principal {
 		funcionario.profissao = "Costureiro";
 
 		usuario.apresentar();
-		funcionario.despedir();
+		usuario.despedir();
 		funcionario.apresentar();
 		funcionario.despedir();
 		

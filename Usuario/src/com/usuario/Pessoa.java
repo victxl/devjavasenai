@@ -14,7 +14,7 @@ public class Pessoa {
 	}
 	
 	public void despedir() {
-		System.out.println("Foi um praser te conhcer. Até breve!");
+		System.out.printf("\nFoi um praser te conhcer. Até breve, %s.\n",this.nome);
 	}
 	
 
