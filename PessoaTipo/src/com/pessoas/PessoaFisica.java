@@ -3,6 +3,7 @@ package com.pessoas;
 public final class PessoaFisica extends Pessoa {
 	
 	//atributos
+		public String genero;
 		public String nome;
 		public String cpf;
 		public String rg;
@@ -10,10 +11,11 @@ public final class PessoaFisica extends Pessoa {
 		public double salario;
 	
 	
-	//contrutor
+	//construtor
 
 	public PessoaFisica(int idPessoa, String genero) {
 		super(idPessoa);
+		this.genero = genero;
 		
 	}
 

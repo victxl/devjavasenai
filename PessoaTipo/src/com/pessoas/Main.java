@@ -8,7 +8,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		Random n = new Random();
-		PessoaFisica user = new PessoaFisica(n.nextInt(10)); 
+		PessoaFisica user = new PessoaFisica(n.nextInt(10),"Masc"); 
 		PessoaJuridica pj = new PessoaJuridica(n.nextInt(11));
 		
 		
