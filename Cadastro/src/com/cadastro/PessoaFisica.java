@@ -2,6 +2,14 @@ package com.cadastro;
 
 public final class PessoaFisica extends Pessoa {
 	
+	public String nasc;
+	public String rg;
+	public String cpf;
+	public double peso;
+	public double alt;
+	public String genero;
+	public String tiposang;
+	
 	
 	public String getNasc() {
 		return nasc;
@@ -73,13 +81,7 @@ public final class PessoaFisica extends Pessoa {
 	}
 
 
-	public String nasc;
-	public String rg;
-	public String cpf;
-	public double peso;
-	public double alt;
-	public String genero;
-	public String tiposang;
+
 	
 
 	public PessoaFisica(int idPessoa) {
