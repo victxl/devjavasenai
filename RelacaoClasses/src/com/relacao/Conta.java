@@ -1,30 +1,26 @@
 package com.relacao;
 
 public class Conta implements IConta {
-	
-	//2 atributos
+
+	// 2 atributos
 	private int numAg;
 	private int numConta;
 	private double saldo;
 	private Pessoa titularConta;
-	
-	
-	
-	
-	
+
 	// 3 construtor
 	public Conta(int numAg, int numConta, double saldo) {
-	
-		this.numAg=numAg;
-		this.numConta=numConta;
+
+		this.numAg = numAg;
+		this.numConta = numConta;
 		this.saldo = saldo;
-		
+
 	}
 
 	@Override
 	public String fazerDeposito(double valor) {
 		this.saldo += valor;
-		
+
 		return "Deposito efetuado com sucesso.";
 	}
 
@@ -33,9 +29,13 @@ public class Conta implements IConta {
 		if (this.saldo>=valor) {
 			this.saldo-=valor;
 		
+		return "Saque efetudado com sucesso";
+		}
 		
-		return "Saque efetuado com sucesso.";}
+	 else {
+		return "Saque não altorizado";
 	}
+		}
 
 	public int getNumAg() {
 		return numAg;

@@ -28,7 +28,7 @@ public class Main {
 		cc.setTitularConta(user);
 
 		do {
-			op = JOptionPane.showInputDialog(null,"Opções", "Escolha ",JOptionPane.INFORMATION_MESSAGE, null,ops,ops[0]);
+			op = JOptionPane.showInputDialog(null,"Opções", "Escolha ",JOptionPane.ERROR_MESSAGE, null,ops,ops[0]);
 				if (op == "Consultar dados") {JOptionPane.showMessageDialog(null, String.format("ID %d\n"
 						+ "Nome: %s\n"
 						+ "CPF: %s\n"
@@ -60,7 +60,12 @@ public class Main {
 					
 					JOptionPane.showInternalMessageDialog(null, cc.fazerSaque(Double.parseDouble(valorStr.replace(",","."))));
 					
+				} else if (op == "Consultar saldo") {
+					JOptionPane.showMessageDialog(null, String.format("Seu saldo é : R$ %.2f", cc.getSaldo()));
+				
 				}
+				
+					
 				
 			
 		} while (op != "Sair");
