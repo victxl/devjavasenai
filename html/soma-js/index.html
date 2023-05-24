@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma JS</title>
+    <style>
+        @font-face {
+            font-family:'Calculator' ;
+            src: url(fontes/Calculator.ttf) format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        h1{
+            font-family:'Calculator', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="return false">
+      
+       <div> <label for="#">Informe o primeiro numero:</label>
+        <input type="number" id="idn1"><br>
+        <label for="#">Informe o segundo numero:</label>
+        <input type="number" id="idn2"><br>
+
+        <button type="submit"id="idbtnsomar">Somar</button>
+        <button type="submit"id="idbtnsubtrair">Subtrair</button>
+        <button type="submit"id="idbtnmult">Multipricar</button>
+        <button type="submit"id="idbtndiv">Dividir</button>  
+        
+        
+        <h1 id="idresult">000</h1>
+    </div>
+    </form>    
+
+    
+    <script src="script/script.js"></script>
+</body>
+</html>

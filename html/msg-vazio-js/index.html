@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem vazia</title>
+</head>
+<body>
+    <h1>Formulario com mensagens de campo vazio</h1>
+    <hr>
+    
+    <form onsubmit="return false" action="#">
+    <label for="#">Nome:</label>
+    <input type="text" id="idnome">
+    <span id="idspannome" style="color: red;font-size: smaller;"></span>
+    <br><br>
+    
+    <label for="#">Email:</label>
+    <input type="text" id="idemail">
+    <span id="idspanemail" style="color: red; font-size: smaller;"></span>
+    <br><br>
+
+    <label for="#">Telefone:</label>
+    <input type="text" id="idetel">
+    <span id="idspantel" style="color: red; font-size: smaller;"></span>
+    <br><br>
+
+    <label for="#">Profissão:</label>
+    <input type="text" id="idprofissao">
+    <span id="idspanprofissao" style="color: red; font-size: smaller;"></span>
+    <br><br>
+    <button type="submit" id="idbtn">Enviar</button>
+    <hr>
+    <h2 id="idmensagem"></h2>
+
+    
+
+</form>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

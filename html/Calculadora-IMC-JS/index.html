@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculo IMC</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar bg-body-tertiary fundogradiente">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="imagem/iconimc.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                CALCULO IMC
+            </a>
+        </div>
+    </nav>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col-12 col-md-12">
+                <h4>Nosso site apresenta uma calculadora de IMC, uma ferramenta essencial para monitorar e avaliar sua
+                    saúde. Com resultados precisos e rápidos, você pode obter uma estimativa do seu Índice de Massa
+                    Corporal, ajudando-o a tomar decisões informadas sobre seu peso e bem-estar. Nós nos comprometemos
+                    em fornecer uma experiência fácil e útil, ajudando você a alcançar seus objetivos de saúde e
+                    promovendo um estilo de vida equilibrado.</h4>
+            </div>
+            <div class="col">
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col-12 col-md-12">
+
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col" class>
+                            <form onsubmit="return false">
+                                <div class="mb-3">
+                                    <br><br><br><br>
+                                    <input type="text" class="form-control" id="idpeso" 
+                                        placeholder="Informe seu peso em Kg"><br>
+                                    <input type="text" class="form-control" id="idalt"
+                                        placeholder="Informe sua altura em metros">
+                                </div>
+                                <div class="d-grid gap-2">
+                                <button id="idbtn" type="submit"  class="btn btn-dark fundogradiente ">Calcular</button>
+                            </div>
+                            </form>
+                        </div>
+                        <div class="col">
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">IMC</th>
+                                    <th scope="col">First</th>
+                                   
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">ABAIXO DE 18,5</th>
+                                    <td>abaixo do peso</td>
+                                   
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">ENTRE 18,6 E 24,9</th>
+                                    <td>Peso ideal <br> 'PARABÉNS'
+                                    </td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">ENTRE 25,0 E 29,9</th>
+                                    <td>Levemente acima do peso</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">ENTRE 30,0 E 34,9</th>
+                                    <td>Obesidade grau I</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">ENTRE 35,0 E 39,9</th>
+                                    <td>Obesidade grau II</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">ACIMA DE 40</th>
+                                    <td>Obesidade grau III</td>
+                                    
+                                  </tr>
+                                </tbody>
+                              </table>
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="col">
+            </div>
+            <br>
+            <hr>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

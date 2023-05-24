@@ -1,0 +1,26 @@
+@font-face {
+    font-family:'Calculator' ;
+    src: url(fontes/Calculator.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+button{
+    /* background-color: blanchedalmond;
+   width: 50px;
+   height: 50px;
+    color: blue; */
+
+    
+	background: #0066A2;
+	color: white;
+	border-style: outset;
+	border-color: #0066A2;
+	height: 30px;
+	width: 30px;
+	font-family:'Calculator', Courier, monospace;
+	text-shadow: none;
+    
+}
+
+textarea{text-align: right;}
