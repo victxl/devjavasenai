@@ -5,12 +5,19 @@ const profissaomsg = document.getElementById('idprofissao');
 const generomsg = document.getElementById('idgenero');
 const escolamsg = document.getElementById('idescola');
 const telmsg = document.getElementById('idtel');
+<<<<<<< HEAD
 const cepmsg = document.getElementById('idcep');
+=======
+>>>>>>> 8e14cf6bc3bf5630e88b99b5381688dc2c45d47b
 
 
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8e14cf6bc3bf5630e88b99b5381688dc2c45d47b
 nomemsg.addEventListener('blur', () => {
 
     nome = nomemsg.value;
@@ -168,6 +175,7 @@ const btn = document.getElementById('idbtn');
 
 
 btn.addEventListener('click', () => {
+<<<<<<< HEAD
     nome = nomemsg.value;
     cpf = cpfmsg.value;
     email = emailmsg.value;
@@ -226,3 +234,56 @@ btn.addEventListener('click', () => {
         
     }
 });
+=======
+
+    
+
+    if (nome  ==='' ) {
+        alert(nome)
+        document.getElementById('idnome').setAttribute('placeholder', '*Campo obrigatorio')
+
+    }
+    // else if (cpf =! '' ) {
+    //     document.getElementById('idcpf').setAttribute('placeholder', '*Campo obrigatorio')
+
+
+    // }
+    // else if (email =! '' ) {
+    //     document.getElementById('idemail').setAttribute('placeholder', '*Campo obrigatorio')
+
+    // } 
+    // else if (profissao =! '' ) {
+    //     document.getElementById('idprofissao').setAttribute('placeholder', '*Campo obrigatorio')
+
+    // }
+    // else if (genero =! '' ) {
+    //     document.getElementById('idgenero').setAttribute('placeholder', '*Campo obrigatorio')
+
+    // }
+    // else if (escola =! '' ) {
+    //     document.getElementById('idescola').setAttribute('placeholder', '*Campo obrigatorio')
+
+    // }
+    // else if (tel =! '' ) {
+    //     document.getElementById('idtel').setAttribute('placeholder', '*Campo obrigatorio')
+
+    // }
+    // else if (cep =! '' ) {
+    //     document.getElementById('idcep').setAttribute('placeholder', '*Campo obrigatorio')
+
+    // }
+    else 
+    { 
+        alert('deu')
+        
+        // document.getElementById('idmensagem').innerHTML = 'NOME:' + nome + '<br>' + 'Email:' + email + '<br>' + 'Telefone:' + tel + '<br>' + 'Profissão:' + profissao
+    }
+});
+// const nomemsg = document.getElementById('idnome');
+// const cpfmsg = document.getElementById('idcpf');
+// const emailmsg = document.getElementById('idemail');
+// const profissaomsg = document.getElementById('idprofissao');
+// const generomsg = document.getElementById('idgenero');
+// const escolamsg = document.getElementById('idescola');
+// const telmsg = document.getElementById('idtel');
+>>>>>>> 8e14cf6bc3bf5630e88b99b5381688dc2c45d47b
