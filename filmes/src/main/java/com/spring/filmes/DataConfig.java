@@ -20,7 +20,7 @@ public DataSource dataSource() {
 DriverManagerDataSource dataSource = new DriverManagerDataSource();
 
 dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-dataSource.setUrl("jdbc:mysql://localhost:3306/db_filmes");
+dataSource.setUrl("jdbc:mysql://localhost:3306/filmes");
 dataSource.setUsername("root");
 dataSource.setPassword("");
 return dataSource;
