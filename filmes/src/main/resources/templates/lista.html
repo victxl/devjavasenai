@@ -34,6 +34,22 @@
                     <p><b>Duração: </b><span th:text="${filme.duracao}"></span></p>
                     <p><b>Produtora: </b><span th:text="${filme.produtora}"></span></p>
                     <p><b>Distribuidora: </b><span th:text="${filme.distribuidora}"></span></p>
+                    
+                    <div class="row mb-5">
+                    
+                    <div class="col mt-5">
+                      <a class="btn btn-info" th:href="${(#mvc.url('FC#formAlterarFilme').arg(0,filme.codigoFilme).build())}" role="button">Editar</a>
+                      <!-- <a class="btn btn-info"      th:href="@{/editar/{codigoFilme}(codigoFilme=${filme.codigoFilme})}" role="button">Editar</a> -->
+
+                    </div>
+                    
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    
                 </div>
             </div>
         </div>

@@ -2,9 +2,13 @@ package com.spring.filmes.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.spring.filmes.models.Filme;
 import com.spring.filmes.repository.FilmesRepository;
@@ -46,4 +50,22 @@ public class FilmesController {
 		
 	}
 	
+	@RequestMapping(value="/alterarFilme/{codigoFilme}", method = RequestMethod.GET)
+		public ModelAndView formAlterarFilme(@PathVariable("codigoFilme") long codigoFilm) {
+		Filme filme = fr.findByCodigoFilme(codigoFilm);	
+		ModelAndView mv = new ModelAndView("alterar-filme");
+		
+		mv.addObject("filme",filme);
+		
+		return null;
+	}
+	
+	
+	@RequestMapping(value="/alterarFilme/{codigoFilme}",method = RequestMethod.POST)
+	public String alterarFilme(@Validated Filme filme, BindingResult result, RedirectAttributes attributes) {
+		fr.save(filme);
+		return "redirect:/lista";
+		
+		
+	}
 }
