@@ -53,7 +53,7 @@ public class FilmesController {
 	@RequestMapping(value="/alterarFilme/{codigoFilme}", method = RequestMethod.GET)
 		public ModelAndView formAlterarFilme(@PathVariable("codigoFilme") long codigoFilm) {
 		Filme filme = fr.findByCodigoFilme(codigoFilm);	
-		ModelAndView mv = new ModelAndView("alterar-filme");
+		ModelAndView mv = new ModelAndView("/alterar-filme");
 		
 		mv.addObject("filme",filme);
 		
@@ -67,5 +67,14 @@ public class FilmesController {
 		return "redirect:/lista";
 		
 		
+	}
+	
+	@RequestMapping("excluir")
+	public String excluir(long codigoFilme) {
+		
+		Filme filme =fr.findByCodigoFilme(codigoFilme);
+		fr.delete(filme);
+		
+		return "redirect:/lista";
 	}
 }
