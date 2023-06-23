@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas teste</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div th:replace="fragments/navbar :: navbar"></div>
+	
+    <div class="container">
+        <h1>Gerenciador de Tarefas</h1>
+        <form method="POST">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Inicio</th>
+                   <th>Ações</th>
+                </tr>
+                
+            </thead>
+            
+            <tbody>
+                <tr th:each="tarefa : ${tarefa}">
+                    <td th:text="${tarefa.codigoTarefa}"></td>
+                    <td th:text="${tarefa.titulo}"></td>
+                    <td th:text="${tarefa.inicio}"></td>
+                    
+                    <td>
+                        <a th:href="@{/tarefas/{id}/editar(id=${tarefa.codigoTarefa})}" class="btn btn-primary btn-sm">Editar</a>
+                        <a th:href="@{/tarefas/{id}/excluir(id=${tarefa.codigoTarefa})}" class="btn btn-danger btn-sm">Excluir</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+       
+        <a href="/formulario" class="btn btn-success">Novaasdf Tarefa</a>
+         </form>
+    </div>
+
+    <!-- JavaScript Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
