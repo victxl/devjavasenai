@@ -50,31 +50,24 @@ public class FilmesController {
 		
 	}
 	
-	@RequestMapping(value="/alterarFilme/{codigoFilme}", method = RequestMethod.GET)
-		public ModelAndView formAlterarFilme(@PathVariable("codigoFilme") long codigoFilm) {
-		Filme filme = fr.findByCodigoFilme(codigoFilm);	
-		ModelAndView mv = new ModelAndView("/alterar-filme");
+	@RequestMapping(value="/alterar-filme/{codigoFilme}", method = RequestMethod.GET)
+		public ModelAndView formAlterarFilme(@PathVariable("codigoFilme") long codigoFilme) {
+		Filme filme = fr.findByCodigoFilme(codigoFilme);	
+		ModelAndView mv = new ModelAndView("alterar-filme");
 		
 		mv.addObject("filme",filme);
 		
-		return null;
+		return mv;
 	}
 	
 	
-	@RequestMapping(value="/alterarFilme/{codigoFilme}",method = RequestMethod.POST)
+	@RequestMapping(value="/alterar-filme/{codigoFilme}",method=RequestMethod.POST)
 	public String alterarFilme(@Validated Filme filme, BindingResult result, RedirectAttributes attributes) {
+		
 		fr.save(filme);
-		return "redirect:/lista";
-		
-		
-	}
-	
-	@RequestMapping("excluir")
-	public String excluir(long codigoFilme) {
-		
-		Filme filme =fr.findByCodigoFilme(codigoFilme);
-		fr.delete(filme);
 		
 		return "redirect:/lista";
+		
+		
 	}
 }
