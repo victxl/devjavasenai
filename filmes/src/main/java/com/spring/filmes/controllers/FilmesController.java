@@ -53,7 +53,7 @@ public class FilmesController {
 	@RequestMapping(value="/alterar-filme/{codigoFilme}", method = RequestMethod.GET)
 		public ModelAndView formAlterarFilme(@PathVariable("codigoFilme") long codigoFilme) {
 		Filme filme = fr.findByCodigoFilme(codigoFilme);	
-		ModelAndView mv = new ModelAndView("alterar-filme");
+		ModelAndView mv = new ModelAndView("/alterar-filme");
 		
 		mv.addObject("filme",filme);
 		
