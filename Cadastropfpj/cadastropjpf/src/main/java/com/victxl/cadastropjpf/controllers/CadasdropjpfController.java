@@ -3,13 +3,12 @@ package com.victxl.cadastropjpf.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.victxl.cadastropjpf.repository.PessoaFisicaRepository;
 
-import com.victxl.cadastropjpf.repository.PessoaJuridicaRepository;
-
-public class PessoaJuridicaController {
+public class CadasdropjpfController {
 	
 	@Autowired
-	private PessoaJuridicaRepository pj;
+	private PessoaFisicaRepository pf;
 	
 	@RequestMapping ("/")
 		public String index() {
