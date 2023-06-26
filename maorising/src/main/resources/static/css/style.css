@@ -1,0 +1,108 @@
+.bg-degrade {
+   
+    background: linear-gradient(315deg, #343740, #8F96A6, #0D0D0D);
+    font-family: 'Varino';
+    font-weight: 300;
+    font-style: normal;
+
+
+
+
+}
+
+    @font-face {
+        font-family: 'Varino Extrude';
+        src: url('font/VarinoExtrude-Regular.eot');
+        src: local('Varino Extrude'), local('VarinoExtrude-Regular'),
+            url('/font/VarinoExtrude-Regular.eot?#iefix') format('embedded-opentype'),
+            url('/font/VarinoExtrude-Regular.woff2') format('woff2'),
+            url('/font/VarinoExtrude-Regular.woff') format('woff'),
+            url('/font/VarinoExtrude-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Varino';
+        src: url('/font/VarinoLight-Regular.eot');
+        src: local('Varino Light'), local('VarinoLight-Regular'),
+            url('/font/VarinoLight-Regular.eot?#iefix') format('embedded-opentype'),
+            url('/font/VarinoLight-Regular.woff2') format('woff2'),
+            url('/font/VarinoLight-Regular.woff') format('woff'),
+            url('/font/VarinoLight-Regular.ttf') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Varino';
+        src: url('/font/Varino.eot');
+        src: local('Varino Bold'), local('Varino'),
+            url('/font/Varino.eot?#iefix') format('embedded-opentype'),
+            url('/font/Varino.woff2') format('woff2'),
+            url('/font/Varino.woff') format('woff'),
+            url('/font/Varino.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Varino Normal';
+        src: url('/font/VarinoNormal-Regular.eot');
+        src: local('Varino Normal'), local('VarinoNormal-Regular'),
+            url('/font/VarinoNormal-Regular.eot?#iefix') format('embedded-opentype'),
+            url('/font/VarinoNormal-Regular.woff2') format('woff2'),
+            url('/font/VarinoNormal-Regular.woff') format('woff'),
+            url('/font/VarinoNormal-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Varino Outline';
+        src: url('/font/VarinoOutline-Regular.eot');
+        src: local('Varino Outline'), local('VarinoOutline-Regular'),
+            url('/font/VarinoOutline-Regular.eot?#iefix') format('embedded-opentype'),
+            url('/font/VarinoOutline-Regular.woff2') format('woff2'),
+            url('/font/VarinoOutline-Regular.woff') format('woff'),
+            url('/font/VarinoOutline-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+
+  /* Color Theme Swatches in Hex */
+.UI/UX-1-hex { color: #343740; }
+.UI/UX-2-hex { color: #8F96A6; }
+.UI/UX-3-hex { color: #5DBF4E; }
+.UI/UX-4-hex { color: #498C3F; }
+.UI/UX-5-hex { color: #0D0D0D; }
+
+
+
+  /* Color Theme Swatches in Hex */
+#343740
+#8F96A6
+#5DBF4E
+#498C3F
+#0D0D0D
+
+/* Color Theme Swatches in RGBA */
+.UI/UX-1-rgba { color: rgba(51, 54, 63, 1); }
+.UI/UX-2-rgba { color: rgba(142, 150, 165, 1); }
+.UI/UX-3-rgba { color: rgba(93, 191, 78, 1); }
+.UI/UX-4-rgba { color: rgba(73, 140, 63, 1); }
+.UI/UX-5-rgba { color: rgba(12, 12, 12, 1); }
+
+/* Color Theme Swatches in HSLA */
+.UI/UX-1-hsla { color: hsla(225, 10, 22, 1); }
+.UI/UX-2-hsla { color: hsla(219, 11, 60, 1); }
+.UI/UX-3-hsla { color: hsla(112, 46, 52, 1); }
+.UI/UX-4-hsla { color: hsla(112, 37, 39, 1); }
+.UI/UX-5-hsla { color: hsla(0, 0, 5, 1); }
+
+body{
+    background-image: url(/img/mesa-de-trabalho-com-papel-e-lapis-de-cor.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+}

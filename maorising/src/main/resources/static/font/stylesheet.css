@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Varino Extrude';
+    src: url('VarinoExtrude-Regular.eot');
+    src: local('Varino Extrude'), local('VarinoExtrude-Regular'),
+        url('VarinoExtrude-Regular.eot?#iefix') format('embedded-opentype'),
+        url('VarinoExtrude-Regular.woff2') format('woff2'),
+        url('VarinoExtrude-Regular.woff') format('woff'),
+        url('VarinoExtrude-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Varino';
+    src: url('VarinoLight-Regular.eot');
+    src: local('Varino Light'), local('VarinoLight-Regular'),
+        url('VarinoLight-Regular.eot?#iefix') format('embedded-opentype'),
+        url('VarinoLight-Regular.woff2') format('woff2'),
+        url('VarinoLight-Regular.woff') format('woff'),
+        url('VarinoLight-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Varino';
+    src: url('Varino.eot');
+    src: local('Varino Bold'), local('Varino'),
+        url('Varino.eot?#iefix') format('embedded-opentype'),
+        url('Varino.woff2') format('woff2'),
+        url('Varino.woff') format('woff'),
+        url('Varino.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Varino Normal';
+    src: url('VarinoNormal-Regular.eot');
+    src: local('Varino Normal'), local('VarinoNormal-Regular'),
+        url('VarinoNormal-Regular.eot?#iefix') format('embedded-opentype'),
+        url('VarinoNormal-Regular.woff2') format('woff2'),
+        url('VarinoNormal-Regular.woff') format('woff'),
+        url('VarinoNormal-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Varino Outline';
+    src: url('VarinoOutline-Regular.eot');
+    src: local('Varino Outline'), local('VarinoOutline-Regular'),
+        url('VarinoOutline-Regular.eot?#iefix') format('embedded-opentype'),
+        url('VarinoOutline-Regular.woff2') format('woff2'),
+        url('VarinoOutline-Regular.woff') format('woff'),
+        url('VarinoOutline-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
