@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt">
+<html lang="pt-br">
 
 <head>
   <title>Cadastro</title>
@@ -11,26 +11,32 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-</head>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Meu Deu de novo</title>
+      <!-- Inclua os arquivos CSS do Bootstrap -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
 
-<body>
-  <header>
-    <!-- place navbar here -->
-  </header>
-  <main>
-    <span>deu certo até aqui</span>
-  </main>
-  <footer>
-    <!-- place footer here -->
-  </footer>
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
-</body>
+  <body>
+      <div th:include="base/navbar :: navbar"></div>
+  
+      <div class="container">
+          <h1>Meu Projeto</h1>
+          <hr>
+          <h2>Cadastro deu de novo de novo
+          </h2>
+          <ul>
+              <li><a href="/cadastro-pf">Cadastro de Pessoa Física</a></li>
+              <li><a href="/cadastro-pj">Cadastro de Pessoa Jurídica</a></li>
+          </ul>
+      </div>
+  
+      <!-- Inclua os arquivos JavaScript do Bootstrap -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
 
 </html>
