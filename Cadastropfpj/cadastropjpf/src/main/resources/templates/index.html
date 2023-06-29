@@ -20,16 +20,15 @@
   </head>
 
   <body>
-      <div th:include="base/navbar :: navbar"></div>
+      <div th:insert="~{base/navbar :: navbar}"></div>
   
       <div class="container">
-          <h1>Meu Projeto</h1>
+          <h1>Sistem de cadastramento universal</h1>
           <hr>
-          <h2>Cadastro deu de novo de novo
-          </h2>
+          <h2>Tipo de Pessoa</h2>
           <ul>
-              <li><a href="/cadastro-pf">Cadastro de Pessoa Física</a></li>
-              <li><a href="/cadastro-pj">Cadastro de Pessoa Jurídica</a></li>
+              <li><a href="/cadastroPf">Cadastro de Pessoa Física</a></li>
+              <li><a href="/cadastroPj">Cadastro de Pessoa Jurídica</a></li>
           </ul>
       </div>
   

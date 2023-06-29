@@ -16,9 +16,8 @@ public class PessoaFisica implements Serializable {
 		private long codigoPF;
 		
 		private String nome;
-	    private String cnpj;
-	    private String inscricaoEstadual;
-	    private String site;
+	    private String cpf;
+	    private String telefone;
 	    private String email;
 	    private String cep;
 	    private String uf;
@@ -27,9 +26,6 @@ public class PessoaFisica implements Serializable {
 	    private String logradouro;
 	    private String complemento;
 	    private String numero;
-	    
-	    
-	    
 		public long getCodigoPF() {
 			return codigoPF;
 		}
@@ -42,23 +38,17 @@ public class PessoaFisica implements Serializable {
 		public void setNome(String nome) {
 			this.nome = nome;
 		}
-		public String getCnpj() {
-			return cnpj;
+		public String getCpf() {
+			return cpf;
 		}
-		public void setCnpj(String cnpj) {
-			this.cnpj = cnpj;
+		public void setCpf(String cpf) {
+			this.cpf = cpf;
 		}
-		public String getInscricaoEstadual() {
-			return inscricaoEstadual;
+		public String getTelefone() {
+			return telefone;
 		}
-		public void setInscricaoEstadual(String inscricaoEstadual) {
-			this.inscricaoEstadual = inscricaoEstadual;
-		}
-		public String getSite() {
-			return site;
-		}
-		public void setSite(String site) {
-			this.site = site;
+		public void setTelefone(String telefone) {
+			this.telefone = telefone;
 		}
 		public String getEmail() {
 			return email;
@@ -111,6 +101,10 @@ public class PessoaFisica implements Serializable {
 		public static long getSerialversionuid() {
 			return serialVersionUID;
 		}
+	    
+	    
+	    
+		
 		
 
 }

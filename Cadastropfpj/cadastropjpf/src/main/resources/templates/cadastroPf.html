@@ -10,52 +10,49 @@
     </head>
     
     <body>
+     <div th:insert="~{base/navbar :: navbar}"></div>
         <div class="container">
             <h1>Cadastro de Pessoa Jurídica</h1>
             <hr>
-            <form>
+            <form method="POST">
                 <div class="form-group">
-                    <label for="nomeEmpresa">Nome da Empresa</label>
-                    <input type="text" class="form-control" id="nomeEmpresa" name="nomeEmpresa" required>
+                    <label for="nomeEmpresa">Nome</label>
+                    <input type="text" class="form-control" id="nome" name="nome" required>
                 </div>
                 <div class="form-group">
-                    <label for="cnpj">CNPJ</label>
-                    <input type="text" class="form-control" id="cnpj" name="cnpj" required>
+                    <label for="cpf">CPF</label>
+                    <input type="text" class="form-control" id="cpf" name="cpf" required>
                 </div>
                 <div class="form-group">
-                    <label for="inscricaoEstadual">Inscrição Estadual</label>
-                    <input type="text" class="form-control" id="inscricaoEstadual" name="inscricaoEstadual" required>
+                    <label for="telefone">Telefone</label>
+                    <input type="text" class="form-control" id="telefone" name="telefone">
                 </div>
                 <div class="form-group">
-                    <label for="site">Site da Empresa</label>
-                    <input type="text" class="form-control" id="site" name="site">
-                </div>
-                <div class="form-group">
-                    <label for="email">E-mail da Empresa</label>
+                    <label for="email">E-mail</label>
                     <input type="email" class="form-control" id="email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="cep">CEP da Empresa</label>
+                    <label for="cep">CEP</label>
                     <input type="text" class="form-control" id="cep" name="cep" required>
                 </div>
                 <div class="form-group">
-                    <label for="uf">UF da Empresa</label>
+                    <label for="uf">UF</label>
                     <input type="text" class="form-control" id="uf" name="uf" required>
                 </div>
                 <div class="form-group">
-                    <label for="cidade">Cidade da Empresa</label>
+                    <label for="cidade">Cidade</label>
                     <input type="text" class="form-control" id="cidade" name="cidade" required>
                 </div>
                 <div class="form-group">
-                    <label for="bairro">Bairro da Empresa</label>
+                    <label for="bairro">Bairro</label>
                     <input type="text" class="form-control" id="bairro" name="bairro" required>
                 </div>
                 <div class="form-group">
-                    <label for="logradouro">Logradouro da Empresa</label>
+                    <label for="logradouro">Logradouro</label>
                     <input type="text" class="form-control" id="logradouro" name="logradouro" required>
                 </div>
                 <div class="form-group">
-                    <label for="complemento">Complemento da Empresa</label>
+                    <label for="complemento">Complemento</label>
                     <input type="text" class="form-control" id="complemento" name="complemento">
                 </div>
                 <div class="form-group">

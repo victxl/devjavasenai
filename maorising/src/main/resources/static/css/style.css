@@ -101,8 +101,8 @@
 .UI/UX-4-hsla { color: hsla(112, 37, 39, 1); }
 .UI/UX-5-hsla { color: hsla(0, 0, 5, 1); }
 
-body{
-    background-image: url(/img/mesa-de-trabalho-com-papel-e-lapis-de-cor.jpg);
-    background-size: auto;
-    background-repeat: no-repeat;
-}
+body {
+        background-image: url(/img/background-greywhite-6.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }

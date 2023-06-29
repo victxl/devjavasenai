@@ -1,13 +1,18 @@
 package com.victxl.cadastropjpf.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
+import com.victxl.cadastropjpf.models.PessoaFisica;
 import com.victxl.cadastropjpf.models.PessoaJuridica;
 import com.victxl.cadastropjpf.repository.PessoaFisicaRepository;
 import com.victxl.cadastropjpf.repository.PessoaJuridicaRepository;
 
+
+@Controller
 public class CadastropjpfController {
 	
 	@Autowired
@@ -21,12 +26,12 @@ public class CadastropjpfController {
 	return "index";
 	}
 			
-	@RequestMapping(value="/cadastro-pj", method=RequestMethod.GET)
+	@RequestMapping(value="/cadastroPj", method=RequestMethod.GET)
 	public String cadastroPJ() {
-		return "cadastro-pj";
+		return "cadastroPj";
 	}
 	
-	@RequestMapping(value="/cadastro-pj", method=RequestMethod.POST)
+	@RequestMapping(value="/cadastroPj", method=RequestMethod.POST)
 	public String cadastrarPJ(PessoaJuridica pessoajuridica) {
 		
 		pj.save(pessoajuridica);
@@ -35,7 +40,29 @@ public class CadastropjpfController {
 		
 	}
 	
+	@RequestMapping(value="/cadastroPf", method=RequestMethod.GET)
+	public String cadastroPF() {
+		return "cadastroPf";
+	}
 	
+	@RequestMapping(value="/cadastroPf", method=RequestMethod.POST)
+	public String cadastrarPF(PessoaFisica pessoafisica) {
+		
+		pf.save(pessoafisica);
+		
+		return "redirect:/";
 	
+	}
+	@RequestMapping("/lista")
+	public ModelAndView lista() {
+		
+		ModelAndView mv = new ModelAndView("lista");
+		
+		Iterable<PessoaFisica> pessoaFisica = pf.findAll();
+		mv.addObject("pessoaFisica", pessoaFisica);
+		
+		return mv;
+		
+	}
 
 }
