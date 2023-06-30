@@ -11,56 +11,58 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-</head>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Lista</title>
+      <!-- Inclua os arquivos CSS do Bootstrap -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
 
-<body>
-  <header>
-    
-  </header>
+  <body>
+      <div th:insert="~{base/navbar :: navbar}"></div>
   <main>
+    
  <div class="container mt-100">
-            <h1>Lista de pessoaFisicas</h1>
+            <h1>Lista de Pessoas Fisicas 1</h1>
             <hr />
             <div class="row mt-5 mb-5">
-                <div class="col-12 col-md-4 mb-5" th:each="pessoaFisica : ${pessoa_fisica}">
-                    <h3><span th:text="${pessoaFisica.nome}"></span></h3>
+                <div class="col-12 col-md-4 mb-5" th:each="pessoaFisicas : ${pessoaFisica}">
+                    <h3><span th:text="${pessoaFisicas.nome}"></span></h3>
                     <hr />
-                    <p><b>Código do pessoaFisica: </b><span th:text="${pessoaFisica.codigoFilme}"></span></p>
-                    <p><b>Direção: </b><span th:text="${pessoaFisica.nome}"></span></p>
-                    <p><b>Gênero: </b><span th:text="${pessoaFisica.cpf}"></span></p>
-                    <p><b>Ano: </b><span th:text="${pessoaFisica.telefone}"></span></p>
-                    <p><b>Duração: </b><span th:text="${pessoaFisica.cep}"></span></p>
-                    <p><b>Produtora: </b><span th:text="${pessoaFisica.logradouro}"></span></p>
-                    <p><b>Distribuidora: </b><span th:text="${pessoaFisica.complemento}"></span></p>
+                    <p><b>Código do pessoa Fisica: </b><span th:text="${pessoaFisicas.codigoPF}"></span></p>
+                    <p><b>Direção: </b><span th:text="${pessoaFisicas.nome}"></span></p>
+                    <p><b>Gênero: </b><span th:text="${pessoaFisicas.cpf}"></span></p>
+                    <p><b>Ano: </b><span th:text="${pessoaFisicas.telefone}"></span></p>
+                    <p><b>Duração: </b><span th:text="${pessoaFisicas.cep}"></span></p>
+                    <p><b>Produtora: </b><span th:text="${pessoaFisicas.logradouro}"></span></p>
+                    <p><b>Distribuidora: </b><span th:text="${pessoaFisicas.complemento}"></span></p>
 
-                    <!-- botões de alterar e excluir -->
-                    <!-- <div class="row mb-5"> -->
-                      <!-- botão alterar -->
-                      <!-- <div class="col-4">
-                        <a class="btn btn-primary" th:href="${(#mvc.url('CC#formAlterarFilme').arg(0, pessoaFisica.codigoFilme).build())}" role="button">Alterar</a>
-                      </div> -->
+                    <!-- <div class="row mb-5">
+                     
+                      <div class="col-4">
+                        <a class="btn btn-primary" th:href="${(#mvc.url('FC#formAlterarFilme').arg(0, filme.codigoFilme).build())}" role="button">Alterar</a>
+                      </div>
                       
-                      <!-- botão excluir -->
-                      <!-- <div class="col-4">
-                        <a class="btn btn-danger" th:href="${(#mvc.url('CC#excluirFilme').arg(0, pessoaFisica.codigoPF)).build()}" role="button">Excluir</a>
-                      </div> -->
+                     
+                      <div class="col-4">
+                        <a class="btn btn-danger" th:href="${(#mvc.url('FC#excluirFilme').arg(0, filme.codigoFilme)).build()}" role="button">Excluir</a>
+                      </div>
+
+                    </div> -->
 
                     </div>
                 </div>
             </div>
-        </div>
+        
   </main>
   <footer>
     <!-- place footer here -->
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

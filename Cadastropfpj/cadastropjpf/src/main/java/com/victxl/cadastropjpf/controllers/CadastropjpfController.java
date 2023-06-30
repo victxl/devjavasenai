@@ -56,7 +56,7 @@ public class CadastropjpfController {
 	@RequestMapping("/lista")
 	public ModelAndView lista() {
 		
-		ModelAndView mv = new ModelAndView("lista");
+		ModelAndView mv = new ModelAndView("/lista");
 		
 		Iterable<PessoaFisica> pessoaFisica = pf.findAll();
 		mv.addObject("pessoaFisica", pessoaFisica);
