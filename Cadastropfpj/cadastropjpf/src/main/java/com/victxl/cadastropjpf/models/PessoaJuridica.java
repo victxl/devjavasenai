@@ -29,10 +29,10 @@ public class PessoaJuridica implements Serializable {
     private String logradouroPJ;
     private String complementoPJ;
     private String numeroPJ;
-	public long getCodigopj() {
+	public long getCodigoPJ() {
 		return codigoPJ;
 	}
-	public void setCodigopj(long codigopj) {
+	public void setCodigoPJ(long codigoPJ) {
 		this.codigoPJ = codigoPJ;
 	}
 	public String getNomePJ() {
@@ -107,9 +107,8 @@ public class PessoaJuridica implements Serializable {
 	public void setNumeroPJ(String numeroPJ) {
 		this.numeroPJ = numeroPJ;
 	}
-	public static long getSerialversionuid() {
-		return serialVersionUID;
-	}
+	
 	
 
 }
+

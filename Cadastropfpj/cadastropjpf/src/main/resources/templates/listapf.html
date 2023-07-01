@@ -38,18 +38,18 @@
                     <p><b>Produtora: </b><span th:text="${pessoaFisicas.logradouro}"></span></p>
                     <p><b>Distribuidora: </b><span th:text="${pessoaFisicas.complemento}"></span></p>
 
-                    <!-- <div class="row mb-5">
+                     <div class="row mb-5">
                      
                       <div class="col-4">
-                        <a class="btn btn-primary" th:href="${(#mvc.url('FC#formAlterarFilme').arg(0, filme.codigoFilme).build())}" role="button">Alterar</a>
+                        <a class="btn btn-primary" th:href="${(#mvc.url('CC#formAlterarPF').arg(0, pessoaFisica.codigoPF).build())}" role="button">Alterar</a>
                       </div>
                       
                      
                       <div class="col-4">
-                        <a class="btn btn-danger" th:href="${(#mvc.url('FC#excluirFilme').arg(0, filme.codigoFilme)).build()}" role="button">Excluir</a>
+                        <a class="btn btn-danger" th:href="${(#mvc.url('CC#excluirPF').arg(0, pessoaJuridica.codigoPF)).build()}" role="button">Excluir</a>
                       </div>
 
-                    </div> -->
+                    </div>
 
                     </div>
                 </div>
