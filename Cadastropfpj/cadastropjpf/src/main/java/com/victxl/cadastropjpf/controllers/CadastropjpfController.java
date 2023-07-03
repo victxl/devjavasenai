@@ -50,9 +50,9 @@ public class CadastropjpfController {
 	}
 	
 	@RequestMapping(value="/cadastroPf", method=RequestMethod.POST)
-	public String cadastrarPF(PessoaFisica pessoafisica) {
+	public String cadastrarPF(PessoaFisica pessoaFisica) {
 		
-		pf.save(pessoafisica);
+		pf.save(pessoaFisica);
 		
 		return "redirect:/";
 	
@@ -81,7 +81,7 @@ public class CadastropjpfController {
 		
 	}
 	
-	@RequestMapping(value="/alterarPF/{codigoPF}", method=RequestMethod.GET)
+	@RequestMapping(value="/alterarPf/{codigoPF}", method=RequestMethod.GET)
 	public ModelAndView formAlterarPF(@PathVariable("codigoPF") long codigoPF) {
 		
 		PessoaFisica pessoaFisica = pf.findByCodigoPF(codigoPF);
@@ -95,10 +95,19 @@ public class CadastropjpfController {
 		
 	}
 	
-	@RequestMapping(value="/alterarPJ/{codigoPJ}", method=RequestMethod.GET)
-	public ModelAndView formAlterarPJ(@PathVariable("codigoPF") long codigoPF) {
+	@RequestMapping(value="/alterarPf/{codigoPF}", method=RequestMethod.POST)
+	public String alterarPF(@Validated PessoaFisica pessoaFisica, BindingResult result, RedirectAttributes attributes) {
 		
-		PessoaJuridica pessoaJuridica = pj.findByCodigoPJ(codigoPF);
+		pf.save(pessoaFisica);
+		
+		return "redirect:/listapf";
+		
+	}
+	
+	@RequestMapping(value="/alterarPj/{codigoPJ}", method=RequestMethod.GET)
+	public ModelAndView formAlterarPJ(@PathVariable("codigoPJ") long codigoPJ) {
+		
+		PessoaJuridica pessoaJuridica = pj.findByCodigoPJ(codigoPJ);
 		
 		ModelAndView mv = new ModelAndView("alterarPJ");
 		
@@ -108,16 +117,9 @@ public class CadastropjpfController {
 		
 	}
 	
-	@RequestMapping(value="/alterarPF/{codigoPF}", method=RequestMethod.POST)
-	public String alterarPF(@Validated PessoaFisica pessoaFisica, BindingResult result, RedirectAttributes attributes) {
+	
 		
-		pf.save(pessoaFisica);
-		
-		return "redirect:/listapf";
-		
-	}
-		
-	@RequestMapping(value="/alterarPJ/{codigoPJ}", method=RequestMethod.POST)
+	@RequestMapping(value="/alterarPj/{codigoPJ}", method=RequestMethod.POST)
 	public String alterarPJ(@Validated PessoaJuridica pessoaJuridica, BindingResult result, RedirectAttributes attributes) {
 		
 		pj.save(pessoaJuridica);
@@ -126,6 +128,16 @@ public class CadastropjpfController {
 		
 	}
 	
+	@RequestMapping("/excluirPf")
+	public String excluirPf(long codigoPF) {
+		
+		PessoaFisica pessoaFisica = pf.findByCodigoPF(codigoPF);
+		pf.delete(pessoaFisica);
+		
+		return "redirect:/";
+		
+	}
+
 
 }
 	

@@ -41,12 +41,12 @@
                      <div class="row mb-5">
                      
                       <div class="col-4">
-                        <a class="btn btn-primary" th:href="${(#mvc.url('CC#formAlterarPF').arg(0, pessoaFisica.codigoPF).build())}" role="button">Alterar</a>
+                       <a class="btn btn-danger" th:href="${(#mvc.url('CC#alterarPf').arg(0, pessoaFisica.codigoPF)).build()}" role="button">Excluir</a>
                       </div>
                       
                      
                       <div class="col-4">
-                        <a class="btn btn-danger" th:href="${(#mvc.url('CC#excluirPF').arg(0, pessoaJuridica.codigoPF)).build()}" role="button">Excluir</a>
+                        <a class="btn btn-danger" th:href="${(#mvc.url('CC#excluirPf').arg(0, pessoaFisica.codigoPF)).build()}" role="button">Excluir</a>
                       </div>
 
                     </div>
