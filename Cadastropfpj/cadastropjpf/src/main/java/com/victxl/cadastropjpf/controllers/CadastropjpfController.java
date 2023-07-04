@@ -86,7 +86,7 @@ public class CadastropjpfController {
 		
 		PessoaFisica pessoaFisica = pf.findByCodigoPF(codigoPF);
 		
-		ModelAndView mv = new ModelAndView("alterarPF");
+		ModelAndView mv = new ModelAndView("alterarPf");
 		
 		mv.addObject("pessoaFisica", pessoaFisica);
 		
@@ -134,10 +134,19 @@ public class CadastropjpfController {
 		PessoaFisica pessoaFisica = pf.findByCodigoPF(codigoPF);
 		pf.delete(pessoaFisica);
 		
-		return "redirect:/";
+		return "redirect:/listapf";
 		
 	}
 
+	@RequestMapping("/excluirPj")
+	public String excluirPj(long codigoPJ) {
+		
+		PessoaJuridica pessoaJuridica = pj.findByCodigoPJ(codigoPJ);
+		pj.delete(pessoaJuridica);
+		
+		return "redirect:/listapj";
+		
+	}
 
 }
 	

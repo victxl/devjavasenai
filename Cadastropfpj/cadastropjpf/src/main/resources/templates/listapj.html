@@ -43,6 +43,17 @@
                     <p><b>Cidade: </b><span th:text="${pessoaJuridicas.cidadePJ}"></span></p>
                     <p><b>UF: </b><span th:text="${pessoaJuridicas.ufPJ}"></span></p>
                     
+                    
+                    <div class="row mb-5">
+                     
+                      <div class="col-4">
+                       <a class="btn btn-primary" th:href="${(#mvc.url('CC#formAlterarPJ').arg(0, pessoaJuridicas.codigoPJ).build())}" role="button">Editar</a>
+                      </div>
+                      
+                       
+                      <div class="col-4">
+                        <a class="btn btn-danger" th:href="${(#mvc.url('CC#excluirPj').arg(0, pessoaJuridicas.codigoPJ).build())}" role="button">Excluir</a>
+                      </div>
                      
                     
 

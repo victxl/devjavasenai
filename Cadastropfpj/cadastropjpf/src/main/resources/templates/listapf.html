@@ -24,29 +24,31 @@
   <main>
     
  <div class="container mt-100">
-            <h1>Lista de Pessoas Fisicas 1</h1>
+ 
+            <h1>Lista de Pessoas Fisicas</h1>
             <hr />
             <div class="row mt-5 mb-5">
                 <div class="col-12 col-md-4 mb-5" th:each="pessoaFisicas : ${pessoaFisica}">
                     <h3><span th:text="${pessoaFisicas.nome}"></span></h3>
                     <hr />
                     <p><b>Código do pessoa Fisica: </b><span th:text="${pessoaFisicas.codigoPF}"></span></p>
-                    <p><b>Direção: </b><span th:text="${pessoaFisicas.nome}"></span></p>
-                    <p><b>Gênero: </b><span th:text="${pessoaFisicas.cpf}"></span></p>
-                    <p><b>Ano: </b><span th:text="${pessoaFisicas.telefone}"></span></p>
-                    <p><b>Duração: </b><span th:text="${pessoaFisicas.cep}"></span></p>
-                    <p><b>Produtora: </b><span th:text="${pessoaFisicas.logradouro}"></span></p>
-                    <p><b>Distribuidora: </b><span th:text="${pessoaFisicas.complemento}"></span></p>
-
+                    <p><b>Nome: </b><span th:text="${pessoaFisicas.nome}"></span></p>
+                    <p><b>Cpf: </b><span th:text="${pessoaFisicas.cpf}"></span></p>
+                    <p><b>Telefone: </b><span th:text="${pessoaFisicas.telefone}"></span></p>
+                    <p><b>Cep: </b><span th:text="${pessoaFisicas.cep}"></span></p>
+                    <p><b>Logradouro: </b><span th:text="${pessoaFisicas.logradouro}"></span></p>
+                    <p><b>Compremento: </b><span th:text="${pessoaFisicas.complemento}"></span></p>
+					<p><b>Cep: </b><span th:text="${pessoaFisicas.cep}"></span></p>
+					
                      <div class="row mb-5">
                      
                       <div class="col-4">
-                       <a class="btn btn-danger" th:href="${(#mvc.url('CC#alterarPf').arg(0, pessoaFisica.codigoPF)).build()}" role="button">Excluir</a>
+                       <a class="btn btn-primary" th:href="${(#mvc.url('CC#formAlterarPF').arg(0, pessoaFisicas.codigoPF).build())}" role="button">Editar</a>
                       </div>
                       
-                     
+                       
                       <div class="col-4">
-                        <a class="btn btn-danger" th:href="${(#mvc.url('CC#excluirPf').arg(0, pessoaFisica.codigoPF)).build()}" role="button">Excluir</a>
+                        <a class="btn btn-danger" th:href="${(#mvc.url('CC#excluirPf').arg(0, pessoaFisicas.codigoPF).build())}" role="button">Excluir</a>
                       </div>
 
                     </div>
